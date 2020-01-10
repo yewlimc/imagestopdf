@@ -3,11 +3,14 @@ package swati4star.createpdf.adapter;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -18,7 +21,8 @@ import swati4star.createpdf.model.FAQItem;
 
 public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.FAQViewHolder> {
 
-    private final List<FAQItem> mFaqs;
+    private List<FAQItem> mFaqs;
+    private List<FAQItem> mFaqsFull;
     private final OnItemClickListener mOnItemClickListener;
 
     public FAQAdapter(List<FAQItem> faqs, OnItemClickListener mOnItemClickListener) {
@@ -30,7 +34,7 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.FAQViewHolder> {
      * Inflates the layout view and returns it
      *
      * @param viewGroup - holds view
-     * @param position - view position
+     * @param position  - view position
      * @return FAQViewHolder View
      */
 
@@ -44,8 +48,9 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.FAQViewHolder> {
 
     /**
      * Binds the FAQItem with the proper data that it fetches from List
+     *
      * @param viewHolder - holds view
-     * @param position - view position
+     * @param position   - view position
      */
     @Override
     public void onBindViewHolder(@NonNull FAQViewHolder viewHolder, int position) {
@@ -72,6 +77,7 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.FAQViewHolder> {
 
         /**
          * Initializes and binds the view and sets the onClickListener
+         *
          * @param itemView - holds view
          */
         FAQViewHolder(@NonNull View itemView) {
@@ -83,11 +89,18 @@ public class FAQAdapter extends RecyclerView.Adapter<FAQAdapter.FAQViewHolder> {
 
         /**
          * Defines the onItemClickListener handler
+         *
          * @param view - view
          */
         @Override
         public void onClick(View view) {
             mOnItemClickListener.onItemClick(getAdapterPosition());
         }
+    }
+
+    public void filterList(ArrayList<FAQItem> filteredList) {
+        mFaqs = filteredList;
+        notifyDataSetChanged();
+        // Log.v("filterList", mFaqs.get(0).getQuestion());
     }
 }
