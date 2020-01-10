@@ -249,7 +249,7 @@ public class PdfToImageFragment extends Fragment implements BottomSheetPopulate,
      */
     private void setTextAndActivateButtons(String path) {
         if (path == null) {
-            StringUtils.getInstance().showSnackbar(mActivity, R.string.error_occurred);
+            StringUtils.getInstance().showSnackbar(mActivity, R.string.error_null_path);
             resetView();
             return;
         }

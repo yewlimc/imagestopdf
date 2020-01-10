@@ -24,6 +24,7 @@ public class FAQFragment extends Fragment implements OnItemClickListener {
 
     private FAQAdapter mFaqAdapter;
     private List<FAQItem> mFaqs;
+    private List<FAQItem> mFaqsSearched;
     private Context mContext;
 
     @BindView(R.id.recycler_view_faq)

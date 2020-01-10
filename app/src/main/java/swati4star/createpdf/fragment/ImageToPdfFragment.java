@@ -121,8 +121,8 @@ public class ImageToPdfFragment extends Fragment implements OnItemClickListener,
 
     private MorphButtonUtility mMorphButtonUtility;
     private Activity mActivity;
-    public static ArrayList<String> mImagesUri = new ArrayList<>();
-    private static final ArrayList<String> mUnarrangedImagesUri = new ArrayList<>();
+    public static ArrayList<String> mImagesUri = new ArrayList<String>();
+    private static final ArrayList<String> mUnarrangedImagesUri = new ArrayList<String>();
     private String mPath;
     private SharedPreferences mSharedPreferences;
     private FileUtils mFileUtils;

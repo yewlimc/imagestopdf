@@ -274,7 +274,7 @@ public class ExceltoPdfFragment extends Fragment implements MergeFilesAdapter.On
         if (mMaterialDialog != null && mMaterialDialog.isShowing())
             mMaterialDialog.dismiss();
         if (!success) {
-            StringUtils.getInstance().showSnackbar(mActivity, R.string.error_occurred);
+            StringUtils.getInstance().showSnackbar(mActivity, R.string.error_create_pdf);
             mTextView.setVisibility(View.GONE);
             mMorphButtonUtility.morphToGrey(mCreateExcelPdf, mMorphButtonUtility.integer());
             mCreateExcelPdf.setEnabled(false);

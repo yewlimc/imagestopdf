@@ -349,6 +349,9 @@
     <string name="rate_title">Évaluez-nous !</string>
     <string name="rate_dialog_text">Si vous aimez cette application, veuillez prendre un moment pour évaluer cette app. Cela ne prendra pas plus d’une minute. Merci pour votre soutien ! :)</string>
     <string name="error_occurred">Une erreur s’est produite</string>
+    <string name="error_null_uri">Error: Image is not found. </string>
+    <string name="error_null_path">Error: Path could not be found. </string>
+    <string name="error_create_pdf">Error: PDF could not be created. </string>
     <string name="rotate_pages">Tourner les pages</string>
     <string name="enter_rotation_angle">Entrez l’angle de rotation</string>
     <string name="rotated_file_name">%s_rotated_%s%s</string>

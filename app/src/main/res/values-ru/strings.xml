@@ -312,7 +312,12 @@
     <string name="rate_title">Оцените нас!</string>
     <string name="rate_dialog_text">Если вам понравилось приложение, пожалуйста, поставьте оценку. Это займет не более минуты. Спасибо за вашу поддержку! :)</string>
     <string name="rate_us_never">Никогда</string>
+
+    <!-- Error strings -->
     <string name="error_occurred">Произошла ошибка</string>
+    <string name="error_null_uri">Error: Image is not found. </string>
+    <string name="error_null_path">Error: Path could not be found. </string>
+    <string name="error_create_pdf">Error: PDF could not be created. </string>
 
     <string name="rotate_pages">Повернуть страницы</string>
     <string name="enter_rotation_angle">Введите угол поворота</string>

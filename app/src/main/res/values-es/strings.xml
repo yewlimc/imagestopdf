@@ -268,6 +268,9 @@
     <string name="remove_pages_error">El valor de entrada no es válido</string>
     <string name="encrypted_pdf">PDF está protegido con contraseña</string>
     <string name="error_occurred">Ocurrió un Error</string>
+    <string name="error_null_uri">Error: Image is not found. </string>
+    <string name="error_null_path">Error: Path could not be found. </string>
+    <string name="error_create_pdf">Error: PDF could not be created. </string>
     <string name="rotate_pages">Rotar Páginas</string>
     <string name="enter_rotation_angle">Ingresar Ángulo de Rotación</string>
     <string name="rotated_file_name">%s_rotated_%s%s</string>

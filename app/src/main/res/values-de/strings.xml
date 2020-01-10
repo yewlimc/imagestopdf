@@ -406,6 +406,9 @@
     <string name="rate_dialog_text">Wenn Sie diese App genießen, nehmen Sie sich bitte einen Moment Zeit, um diese App zu bewerten. Es dauert nicht mehr als eine minute. Danke für Ihre Unterstützung! :)</string>
     <string name="rate_us_never">noch nie</string>
     <string name="error_occurred">Ein Fehler ist aufgetreten</string>
+    <string name="error_null_uri">Error: Image is not found. </string>
+    <string name="error_null_path">Error: Path could not be found. </string>
+    <string name="error_create_pdf">Error: PDF could not be created. </string>
 
     <string name="rotate_pages">Seiten drehen</string>
     <string name="enter_rotation_angle">Drehwinkel eingeben</string>
